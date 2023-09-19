@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+  
+}
+
+.cartItem {
+    width: 90%;
+    min-width: 400px; /* Adjusted minimum width */
+    padding: 15px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd; /* Thicker border */
+    margin-bottom: 20px; /* Added margin between cart items */
+}
+
+.itemWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.itemWrapper>* {
+    margin: 10px;
+}
+
+.itemImage {
+    height: 80px; /* Reduced image height */
+    width: 80px; /* Reduced image width */
+    border-radius: 5px; /* Added border radius */
+    overflow: hidden; /* Ensure image doesn't overflow container */
+}
+
+.itemImage img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.itemTitle {
+    color: #333; /* Darkened title color */
+    font-size: 1.4rem; /* Slightly reduced font size */
+    padding-bottom: 15px; /* Reduced padding */
+}
+
+.itemPrice {
+    font-size: 1.2rem;
+    color: #555; /* Adjusted price color */
+}
+
+.itemDelete {
+    display: flex;
+    padding-right: 10px; /* Reduced padding */
+    font-size: 2rem;
+    align-self: flex-start; /* Align delete icon to the top */
+}
+
+.itemDelete i {
+    font-size: 1.5rem;
+    color: #ee1212; /* Adjusted icon color */
+}
+
+.totalAmount {
+    padding: 15px 0px; /* Reduced padding */
+    width: 90%;
+    text-align: right;
+    font-size: 1.4rem; /* Slightly reduced font size */
+    color: #555; /* Adjusted text color */
+}
+
+.checkout {
+    color: white;
+    font-size: 1.1rem;
+    background-color: #f76a0f; /* Slightly changed button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px; /* Adjusted button position */
+    right: 30px; /* Adjusted button position */
+    transition: all 0.25s ease;
+    cursor: pointer; /* Added pointer cursor */
+}
+
+.checkout:active {
+    transform: scale(0.98);
+}

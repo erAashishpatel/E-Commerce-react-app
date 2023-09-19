@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    background-color: rgb(115, 15, 230);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+        /* border-radius: 10px; */
+    box-shadow: 5px 5px 20px 2px rgba(45, 9, 75, 0.774);
+    position: absolute;
+   
+}
+
+.utilities {
+    display: flex;
+}
+
+.logo,
+.user,
+.cart {
+    margin: 10px;
+    padding: 0px 15px;
+    cursor: pointer;
+        }
+
+.user {
+    padding-right: 50px;
+}
+
+.logo {
+    user-select: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    font-family:cursive;
+    color:black;
+}
+
+.cart a{
+    color: rgba(31, 231, 12, 0.932);
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.user a, .logo a{
+    color: rgb(10, 10, 10);
+    text-decoration:solid;
+}
+
+.addAProduct {
+    background-color: rgba(12, 223, 117, 0.733);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: .85rem;
+    transition: all .2s ease;
+}
+.addAProduct a{
+    color: rgb(7, 7, 7);
+}
+.addAProduct:active {
+    transform: scale(.95);
+}

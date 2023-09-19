@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(14, 79, 219, 0.692);
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100vw;
+   
+}
+
+.container form input,
+.container form textarea {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: .5px solid rgb(7, 7, 7);
+}
+
+.container form input:focus,
+.container form textarea:focus {
+    outline: none;
+   
+}
+
+
+.container form button {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+}
